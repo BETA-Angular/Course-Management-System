@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "course-website-df372": {
+      "hosting": {
+        "course": [
+          "course-website-df372"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "course-website-df372"
+  }
+}
