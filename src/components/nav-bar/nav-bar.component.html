@@ -1,1 +1,63 @@
-<p>nav-bar works!</p>
+<nav class="navbar hide" id="nav" [ngClass]="{ 'open': navbarOpen }">
+    <a class="logo" href="./index.html">
+        
+        <div>
+            <div class="webName">
+                TubeCurate
+            </div>
+            <div class="webNameTag">
+                Curated list of Courses
+            </div>
+        </div>
+    </a>
+
+
+
+
+    <div class="navLinks">
+        <ul>
+            <a href="#Courses" class="navLink">
+                <li>
+                    Courses
+                </li>
+
+            </a>
+            <a href="#About" class="navLink">
+                <li>
+                    About
+                </li>
+
+            </a>
+            <a href="#Blog" class="navLink">
+                <li>
+                    Blog
+                </li>
+
+            </a>
+
+          
+            <a href="Signin" class="primaryBtn">
+                <button class="btn"> Login
+                </button>
+
+            </a>
+
+        </ul>
+       
+
+
+    </div>
+    <div class="burger" (click)="toggleNavbar()">
+        <i class="fa-sharp fa-solid fa-bars"></i>
+    </div>
+
+
+   
+</nav>
+
+
+<!-- /////////////////////////////////////////////////////////////////////////
+    Navbar Ends Here 
+/////////////////////////////////////////////////////////////////////////////
+-->
+

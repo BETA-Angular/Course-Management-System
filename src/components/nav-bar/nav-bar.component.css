@@ -1,0 +1,233 @@
+.navbar {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    padding: 20px 120px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+
+    z-index: 1;
+
+
+}
+
+
+.navbar.show{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    padding: 20px 120px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+
+    z-index: 1;
+
+
+}
+
+
+.navbar .burger {
+    display: none;
+    
+}
+.navbar .logo {
+
+    transition: all 200ms ease-in-out;
+    display: flex;
+}
+
+
+
+.navbar .Logo {
+    margin-right: 16px;
+}
+
+.navbar .webName {
+    font-size: 26px;
+    font-weight: 800;
+    font-family: var(--heading);
+    /* text-align: center; */
+    padding-left: 12px;
+    color: var(--blue);
+}
+
+.navbar .webNameTag {
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 10px;
+    margin-top: 6px;
+}
+
+.navbar .navLinks ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+
+}
+
+.navbar .navLinks ul .navLink:hover{
+    transform: scale(1.08);
+}
+
+.navbar .navLinks .navLink {
+    transition: all 200ms;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 0px;
+    transition: all 200ms ease-in-out;
+}
+
+
+.navbar .navLinks .navLink:hover {
+    color: var(--blue);
+}
+
+.navbar.show {
+    background: var(--white);
+    /* padding: 40px 120px 0px 140px; */
+    height: 80px;
+    padding: 0px 120px;
+    transition: all 300ms ease-in-out;
+
+}
+
+.navbar.hide {
+    margin-top: 20px;
+    background: transparent;
+}
+
+.navbar .burger {
+    display: none;
+
+}
+
+
+
+
+    .modal{
+        position: fixed;
+        top: -50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        padding: 32px;
+        background-color: var(--cc-dark-alt);
+        border-radius: 8px;
+        backdrop-filter: blur(16px);
+        box-shadow:  0px 0px 10px 0px rgba(255, 255,255, 0.05);
+        
+      }
+      
+      .modal.open{
+           top: 50%;
+      }
+      .modal h3{
+          font-size: 24px;
+          margin-bottom: 12px;
+      }
+      .modal .container{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+      
+      }
+      .modal .container input{
+           width: 100%;
+           border: none;
+           outline: none;
+           background: none;
+           margin: 8px 0;
+           padding: 12px 4px;
+           border-bottom: 1px solid #dddddd;
+           color: #8e54e9;
+           font-size: 18px;
+           font-weight: 500;
+           transition: all 100ms ease-in-out;
+       }
+      .modal .container input::-webkit-input-placeholder { /* Edge */
+          color:#cccccc;
+        }
+        
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+          color:#cccccc;
+        }
+        
+        ::placeholder {
+          color:#cccccc;
+        }
+        .modal .container .btn{
+          width: 100%;
+          text-align: center;
+          margin-top: 12px;
+      }
+      
+      
+      @media screen and (max-width: 990px) {
+        .navbar .navLinks {
+            position: absolute;
+            top: 80px;
+            right: 0;
+            background-color: var(--bg-color);
+            width: 50%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 200ms;
+            transform: translatex(100%);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .navbar .navLinks ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            height: 40vh;
+        }
+    
+        .navbar.open .navLinks {
+            transform: translatex(0%);
+        }
+        .navbar .burger {
+            display: block;
+            cursor: pointer;
+            font-size: 22px;
+        }
+        .navbar .burger:hover {
+            color: #487fff;
+        }
+        .navbar .navLinks .navLink{
+            font-size: 14px;
+        }
+    }
+
+
+    @media screen and (max-width: 768px) {
+
+        .navbar{
+            padding: 20px 40px;
+        }
+ .navbar .webName {
+    font-size: 22px;
+ }
+ .navbar .webNameTag{
+    font-size: 14px;
+ }
+    }
+ 
+    @media screen and (max-width: 768px) {
+
+
+    }
+    
+   
+/* //////////////////////////////////////////////////////////////////
+             Navbar Ends Here
+    ////////////////////////////////////////////////////////////////  
+ */
