@@ -6,12 +6,18 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { NavBarComponent } from 'src/components/nav-bar/nav-bar.component';
+import { FooterComponent } from 'src/components/footer/footer.component';
+
+
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavBarComponent,
+    FooterComponent
   ],
   imports: [
      BrowserModule,
